@@ -1,0 +1,735 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+:root {
+     color: #F4D03F;
+     color: yellow;
+     color: black;
+     color: darkmagenta;
+}
+
+html{
+     scroll-behavior: smooth;
+}
+
+
+/* Header */
+
+.contenedor{
+     width: 100%;
+     background-color:black;
+     margin: auto;
+     height: 120px;
+}
+
+.menu-navegacion {
+     display: flex;
+     justify-content:space-around;
+     align-items: center;
+     height: 160px;
+}
+
+
+.logo img {
+     width: 120px;
+}
+
+.enlaces li {
+     list-style: none;
+     display: inline-block;
+     font-family: 'Russo One', sans-serif;
+     font-size: 30px;
+     margin-right: 120px;
+     letter-spacing: 4px;
+     border-bottom: 4px solid yellow;
+}
+
+.enlaces li:hover {
+     transform: scale(1.5);
+     transition: all 1s;
+}
+
+.enlaces a {
+     text-decoration: none;
+     color: #F4D03F;
+}
+
+.hero {
+     width: 100%;
+     height: 500px;
+     background-image: url("../src/imagenes/fondo/cabecera-hamburguesas.jpg");
+     background-position: center;
+     background-size: cover;
+}
+
+.contenedor-textos {
+     padding: 0;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.h1-index {
+     font-family: 'Staatliches', cursive;
+     background-color: yellow;
+     font-size: 40px;
+}
+
+.sub {
+     font-family: 'Staatliches', cursive;
+     background-color: yellow;
+     font-size: 20px;
+}
+
+ /* Fin Header*/
+
+ /* Seccion Uno */
+
+#flexContainerUno{
+     width: 100%;
+     height: 900px;
+     background-color: black;
+     border: 6px solid #F4D03F;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     overflow: hidden;
+}
+.imagen-local{
+     width: 1200px;
+     height: 800px;
+     margin-left: 60px;
+}
+.nosotros-info{
+     width: 1000px;
+     height: 800px;
+     margin-right: 100px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.img-local-1{
+     width: 1200px;
+     height: 800px;
+     border: 5px dotted yellow;
+}
+.h2-informacion{
+
+     font-size: 70px;
+     color: #F4D03F;
+     font-family: 'Russo One', sans-serif;
+}
+.h2-informacion:hover {
+     animation: change 1s;
+}
+.parrafo-nosotros{
+     font-size: 45px;
+     text-align: center;
+     font-family: 'Dancing Script', cursive;
+     color: #F4D03F;
+     overflow: hidden;
+}
+
+
+ /* Fin Seccion Uno */
+
+ /* Seccion Dos */
+
+#flexContainerDos {
+     background-color: black;
+     width: 100%;
+     height: 900px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     overflow: hidden;
+}
+
+.img-burguer1 img {
+     width: 800px;
+     height: 700px;
+     margin-left: 100px;
+     border: 4px solid yellow;
+}
+ .div-menu{
+     width: 600px;
+     height: 600px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-bottom: 120px;
+}
+ .img-burguer2 img {
+     width: 800px;
+     height: 700px;
+     margin-right: 100px;
+     border: 4px solid yellow;
+ }
+
+.section2-h2 {
+     text-align: center;
+     font-size: 70px;
+     font-family: 'Russo One', sans-serif;
+     color: #F4D03F; 
+}
+
+.parrafo-menu {
+     color: red;
+     text-align: center;
+     font-size: 35px;
+     margin-bottom: 40px;
+     font-family: 'Staatliches', cursive;
+     color: #F4D03F;
+}
+
+.section2-h2:hover {
+     animation: change 1s;
+}
+
+@keyframes change {
+     25% {
+         letter-spacing: 6px;
+     }
+     50% {
+        letter-spacing: 10px;
+     }
+     100%{
+         color: yellow;
+     }
+}
+
+.img-logo {
+     width: 270px;
+}
+
+.view-menu {
+     text-align: center;
+     font-size: 60px;
+     font-family: 'Russo One', sans-serif;
+     text-decoration: none;
+     border-bottom: 10px double black;
+     padding-top: 25px;
+     color: yellow;
+}
+
+ /* Fin Seccion Dos */
+
+ /* Seccion Tres */
+
+.container-grid {
+     overflow: hidden;
+     width: 100%;
+     height: 800px;
+     background-color: black;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1.1fr 0.9fr 1fr 1fr;
+     gap: 0px 0px;
+     grid-auto-flow: row;
+     grid-template-areas:
+      "Titulo Mapa"
+      "Surcursal-1 Mapa"
+      "Surcursal-2 Mapa"
+      "Sucursal-3 Mapa";
+}
+ 
+.Mapa {
+     grid-area: Mapa;
+     border: 10px solid #F4D03F;
+
+}
+  
+.Titulo{
+     font-size: 40px;
+     padding-top: 40px;
+     grid-area: Titulo;
+     border: 10px solid #F4D03F;
+     padding-top: 80px;
+}
+.h2-sucursales{
+     font-family: 'Russo One', sans-serif;
+     color: #F4D03F;
+     font-size: 60px;
+     letter-spacing: 3px;
+     text-align: center;
+}
+.h2-sucursales:hover{
+     animation: change 1s;
+}
+  
+.Surcursal-1 {
+     grid-area: Surcursal-1;
+     border: 4px double #F4D03F;
+     color: yellow;
+     padding-left: 150px;
+     padding-top: 30px;
+}
+
+  
+.Surcursal-2 {
+     grid-area: Surcursal-2;
+     border: 4px double #F4D03F;
+     color: yellow;
+     padding-left: 150px;
+     padding-top: 30px;
+}
+  
+.Sucursal-3 {
+     grid-area: Sucursal-3;
+     border: 4px double #F4D03F;
+     color: yellow;
+     padding-left: 150px;
+     padding-top: 30px;
+}
+.locales-text {
+     font-family: 'Staatliches', cursive;
+     font-size: 30px;
+     text-align: center;
+     margin-top: 40px;
+     margin-left: 200px;
+     border: 4px double #F4D03F;
+     width: 600px;
+}
+
+.locales-text:hover {
+     animation: change2 1s;
+}
+
+@keyframes change2 {
+     25% {
+          border: 4px double red;
+     }
+
+     100% {
+          border: 4px double yellowgreen;
+     }
+}
+
+    /* Fin Seccion Tres */
+
+    /* Seccion Cuatro */
+
+.grid-mensaje{
+     overflow: hidden;
+     width: 100%;
+     height: 600px;
+     background-color: #302929;
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+        
+.mensaje .mensaje-tbc {
+     width: 800px;
+     height: 100px;
+     text-align: center;
+     margin-bottom: 20px;
+     border: 4px ridge #F4D03F; 
+     font-family: 'Russo One', sans-serif;   
+}
+
+.mensaje-tbc:hover{
+     animation: change3 1s;
+}
+
+@keyframes change3 {
+    25% {
+        letter-spacing: 2px;
+    }
+    50% {
+       letter-spacing: 4px;
+    }
+    100%{
+        color: yellow;
+    }
+}
+
+.mensaje-tbc {
+     text-align: center;
+     font-size: 30px;
+     margin: 0 auto;
+     padding-top: 30px;
+     color: #F4D03F;  
+}
+
+.dato1 {
+     width: 800px;
+     height: 100px;
+     margin-bottom: 20px;     
+}
+
+.parrafo-1 {
+     text-align: center;
+     font-size: 25px;
+     margin: 0 auto;
+     padding-top: 9px;
+     color: #F4D03F; 
+}
+.input1 {
+     width: 600px;
+     height: 35px;
+     margin-left: 100px;
+     background: none;
+     border: none;
+     border-bottom: 4px solid #F4D03F;
+}
+        
+.dato2{
+     width: 800px;
+     height: 100px;
+     margin-bottom: 20px;    
+}
+.parrafo-2 {
+     text-align: center;
+     font-size: 25px;
+     margin: 0 auto;
+     padding-top: 9px; 
+     color: #F4D03F;
+}
+.input2 {
+     width: 600px;
+     height: 35px;
+     margin-left: 100px;
+     background: none;
+     border: none;
+     border-bottom: 4px solid #F4D03F;
+}
+
+.dato3 { 
+     width: 800px;
+     height: 100px;
+     margin-bottom: 20px;  
+}
+
+.parrafo-3 {
+     text-align: center;
+     font-size: 25px;
+     margin: 0 auto;
+     padding-top: 9px;
+     color: #F4D03F;
+}
+
+.input3 {
+     width: 600px;
+     height:50px;
+     margin-left: 100px;
+     background: none;
+     border: none;
+     border-bottom: 4px solid #F4D03F;
+}
+
+.input4 {
+     width: 300px;
+     height: 40px;
+     margin-top: 20px;
+     background: none;
+     border: 2px solid black;
+     background-color: #F4D03F
+}
+
+/* Fin Seccion Cuatro */
+
+
+/* Footer */
+
+#footerContainer {
+     overflow: hidden;
+     width: 100%;
+     height: 500px;
+     background-image: linear-gradient(to right, black , #f4d03f);
+     display: flex;
+     justify-content: space-between;
+}
+
+.logo-rrss {
+     width: 500px;
+     height: 400px;
+     
+     margin-left: 400px;
+     margin-top: 50px;
+}
+.img-logo2{
+     width: 200px;
+     height: 200px;
+     display: block;
+     margin: 0 auto;
+     
+}
+.rrss-index .icono-facebook{
+     font-size: 100px;
+     border: none;
+     padding-left: 100px;
+     padding-top: 50px;
+     
+}
+.rrss-index .icono-instagram{
+     font-size: 100px;
+     border: none;
+     padding-left: 100px; 
+}
+  
+
+.trabajo-tbc{
+     width: 500px;
+     height: 400px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 20px;
+     margin-right: 500px;
+}
+.trabaja-tbc{
+     text-align: center;
+     font-size: 50px;
+     margin: 0 auto;
+     padding-top: 40px;
+     color: #F4D03F;
+     font-family: 'Russo One', sans-serif;
+}
+.trabaja-tbc:hover{
+     animation: change3 1s;
+}
+.trabaja-tbc-p{
+     text-align: center;
+     font-size: 25px;
+     color: #F4D03F;
+}
+.equipo-tbc a{
+     font-size: 35px;
+     font-family: 'Russo One', sans-serif;
+     text-decoration: none;
+     padding: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
+     color: darkmagenta;
+     border: 4px solid darkmagenta;
+     font-weight: bold;
+}
+.equipo-tbc:hover{
+     animation: heartBeat;
+     animation-duration: 2s;
+}
+
+
+/* Fin Footer */
+
+h4 {
+     font-family: 'Russo One', sans-serif;
+}
+
+h3{ 
+     color: #F4D03F;
+}
+h3:hover {
+     animation: change4 1s;
+     
+}
+
+@keyframes change4 {
+    25% {
+        letter-spacing: 6px;
+    }
+    50% {
+       letter-spacing: 10px;
+    }
+    100%{
+        color: yellow;
+    }
+}
+
+/* Pagina Menu */
+
+/* Header */
+
+.contenedor-menu{
+     width: 100%;
+     height: 200px;
+     background-color: black;
+     overflow: hidden;
+}
+.flex-container-menu{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     overflow: hidden;
+}
+
+
+.nav-1 {
+     width:500px;
+     height: 200px;
+     overflow: hidden; 
+}
+.nav-1 ul{
+     display: flex;
+     justify-content: center;
+     margin-top: 65px;
+     font-size: 40px;
+     font-family: 'Russo One', sans-serif;
+     overflow: hidden;
+}
+.nav-1 a {
+     margin: auto 40px;
+     border-bottom: 4px solid yellow;
+     overflow: hidden;
+}
+
+.nav-2{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     width:500px;
+     height: 200px;
+     overflow: hidden;
+}
+.h1-menu{
+     color: yellow;
+     font-family: 'Russo One', sans-serif;
+     overflow: hidden;
+
+}
+.nav-3{
+     width:500px;
+     height: 200px;
+     overflow: hidden;
+}
+.nav-3 ul{
+     display: flex;
+     justify-content: center;
+     margin-top: 65px;
+     font-size: 40px;
+     font-family: 'Russo One', sans-serif;
+     overflow: hidden;
+}
+.nav-3 a {
+     margin: auto 40px;
+     border-bottom: 4px solid yellow;
+     overflow: hidden;
+}
+/*Fin del Header*/
+
+/* Seccion Uno , Dos , Tres y Cuatro */
+
+
+.h2-menu{
+     text-align: center;
+     font-size: 60px;
+     color: #F4D03F;
+     font-family: 'Russo One', sans-serif;
+     overflow: hidden;
+}
+
+.box-burguers {
+     width: 550px;
+     height: 450px;
+     background-color: black;
+     border: 6px solid #F4D03F;
+     overflow: hidden;
+}
+.figure{
+     position: relative;
+     overflow: hidden;
+     
+}
+.figure img{
+     width: 100%;
+     height: 100%;
+     transition: all 500ms ease-out;
+     
+ }
+ .figure .capa{
+     position: absolute;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(114, 116, 6, 0.6);
+     transition: all 500ms ease-out;
+     opacity: 0;
+     visibility: hidden; 
+ }
+ .capa{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ .figure:hover > .capa{
+     opacity: 1;
+     visibility: visible;
+ }
+
+.texto-burguers{
+     text-align: center;
+     color: yellow;
+}
+/*Footer*/
+
+#footerContainerMenu{
+     background-color: black;
+     width: 100%;
+     height: 300px;
+     margin-top: 20px;
+     display: flex;
+     justify-content: space-evenly;
+}
+.rrss-vuelta{
+     width: 500px;
+     height: 300px;
+}
+.rrss-menu{
+     padding-left: 130px;
+     font-size: 60px;
+}
+
+.vuelta-inicio{
+     color: #F4D03F;
+     padding-top: 70px;
+     text-align: center;
+     font-size: 40px;
+}
+.flecha{
+     padding-left: 200px;
+     font-size: 100px;  
+}
+
+/* Generales*/
+
+a{
+     text-decoration: none;
+     color:#F4D03F;
+       
+}
+li{
+     list-style: none;
+}
+ul{
+     padding: 0;
+     margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
